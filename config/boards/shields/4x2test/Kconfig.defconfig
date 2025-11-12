@@ -1,0 +1,6 @@
+if SHIELD_4X2TEST
+
+config ZMK_KEYBOARD_NAME
+    default "4x2Test"
+
+endif
