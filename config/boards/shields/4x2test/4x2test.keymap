@@ -6,13 +6,17 @@
     keymap {
         compatible = "zmk,keymap";
 
+        // 2 rows × 4 cols:
+        // Top:  1  2  3  4
+        // Bottom: 5  6  7  [BT hold]
         default_layer {
             bindings = <
                 &kp N1  &kp N2  &kp N3  &kp N4
-                &kp N5  &kp N6  &kp N7  &lt bt_layer N8
+                &kp N5  &kp N6  &kp N7  &mo 1
             >;
         };
 
+        // Bluetooth layer (hold the BT key to use these)
         bt_layer {
             bindings = <
                 &none        &none        &bootloader   &bt BT_CLR
